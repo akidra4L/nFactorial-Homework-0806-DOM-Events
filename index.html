@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalida's Spotify</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main-block">
+      <div id="left-block">
+        <div id="dalida">
+          <p><b>Dalida's Spotify</b></p>
+        </div>
+        <div id="left-buttons">
+          <button><i class="fa-solid fa-house"> Home</i></button>
+          <button><i class="fa-solid fa-magnifying-glass"> Search</i></button>
+          <button><i class="fa-solid fa-folder"> Your Library</i></button>
+          <button>
+            <i class="fa-solid fa-folder-plus"></i> Create Playlist
+          </button>
+          <button><i class="fa-solid fa-heart"> Liked Songs</i></button>
+        </div>
+      </div>
+
+      <div id="center-block">
+        <div id="video">
+          <video id="my-video" autoplay muted loop>
+            <source src="video/videoplayback.mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="music-player">
+      <div id="bottom-block">
+        <div id="image">
+          <img src="img/in-the-end.jpeg" alt="fav-song" />
+        </div>
+        <div id="song-description">
+          <p id="song-name">In The End</p>
+          <p id="artist">Linkin Park</p>
+        </div>
+        <div id="btn-change-background" onclick="playPauseTrack()">
+          <i class="fa fa-play-circle fa-3x"></i>
+        </div>
+        <audio src="music/linkin-park.mp3" id="audio"></audio>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7184df81b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
