@@ -36,6 +36,14 @@
     color: white;
 }
 
+#left-buttons button:hover {
+    transform: scale(1.1);
+}
+#left-buttons button:focus {
+    border-color: aqua;
+    background-color: blueviolet;
+}
+
 #dalida {
     width: 165px;
     height: 60px;
